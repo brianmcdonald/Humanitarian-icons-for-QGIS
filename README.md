@@ -14,7 +14,7 @@ Contact bmcdonald@iom.int if you with to have additional QGIS-friendly icons add
 **Update:** The new UNOCHA V2 icons are added. The following Python code was used to modify the SVGs
 ```python
 import glob
-for filepath in glob.iglob('./**/*.txt', recursive=True):
+for filepath in glob.iglob('./**/*.svg', recursive=True):
     with open(filepath) as file:
         s = file.read()
     s = s.replace('<path', '<path fill="param(fill) #407CCA" ')
